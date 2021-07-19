@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import styles from './Filter.module.scss';
+
 const Filter = ({ filter, onChange }) => {
   // console.log(filter);
   return (
@@ -9,6 +11,7 @@ const Filter = ({ filter, onChange }) => {
       value={filter}
       onChange={({ target }) => onChange(target.value)}
       placeholder="Enter name for Search"
+      className={styles.Input}
     />
   );
 };
